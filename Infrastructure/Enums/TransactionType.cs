@@ -2,5 +2,8 @@
 
 public enum TransactionType
 {
-    
+    Error,
+    Withdrawal,
+    Deposit,
+    Transfer,
 }

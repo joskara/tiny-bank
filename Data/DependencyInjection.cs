@@ -11,6 +11,7 @@ public static class DependencyInjection
     {
         services.AddSingleton<IBaseRepository<UserPoco>, UserRepository>();
         services.AddSingleton<IBaseRepository<AccountPoco>, AccountRepository>();
+        services.AddSingleton<IBaseRepository<TransactionPoco>, TransactionRepository>();
 
         return services;
     }

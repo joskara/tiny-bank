@@ -5,6 +5,11 @@ namespace ApplicationServices.Mappers;
 
 public static class AccountMapper
 {
+    public static IEnumerable<Account> ToDomain(this IEnumerable<AccountPoco> accounts)
+    {
+        return accounts.Select(o => o.ToDomain());
+    }
+
     public static Account ToDomain(this AccountPoco? poco)
     {
         if (poco == null) return null!;

@@ -1,4 +1,7 @@
-﻿using API.Models;
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using API.Models;
 using Domain;
 
 namespace API.Mappers;
@@ -12,6 +15,8 @@ public static class AccountMapper
 
     public static AccountDto ToDto(this Account account)
     {
+        if(account == null!) return null!;
+        
         return new AccountDto
         {
             Id = account.Id,

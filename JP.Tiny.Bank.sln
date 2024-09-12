@@ -10,6 +10,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Data", "Data\Data.csproj", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Domain", "Domain\Domain.csproj", "{7448C4D6-9659-472D-8639-8C2C2EF078C2}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{BBD2CC4E-4E09-491A-A1AC-E62ACB776395}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ApplicationServices.Tests", "tests\ApplicationServices.Tests\ApplicationServices.Tests.csproj", "{F055F057-568D-461E-956D-F96D3B823E51}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -36,5 +40,12 @@ Global
 		{7448C4D6-9659-472D-8639-8C2C2EF078C2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7448C4D6-9659-472D-8639-8C2C2EF078C2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7448C4D6-9659-472D-8639-8C2C2EF078C2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F055F057-568D-461E-956D-F96D3B823E51}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F055F057-568D-461E-956D-F96D3B823E51}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F055F057-568D-461E-956D-F96D3B823E51}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F055F057-568D-461E-956D-F96D3B823E51}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{F055F057-568D-461E-956D-F96D3B823E51} = {BBD2CC4E-4E09-491A-A1AC-E62ACB776395}
 	EndGlobalSection
 EndGlobal

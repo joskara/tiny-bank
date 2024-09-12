@@ -31,8 +31,8 @@ public class UserRepository : IBaseRepository<UserPoco>
     // the ideal situation here, but to simulate a filtering through a database, this was the approach I took.
     public UserPoco GetByFilter(string property, string value)
     {
-        return _users.Values.Any(o => o.GetType().GetProperty(property).GetValue(o, null).Equals(value)) ? 
+        return (_users.Values.Any(o => o.GetType().GetProperty(property)!.GetValue(o, null)!.Equals(value)) ? 
             _users.Values.SingleOrDefault(o => o.GetType().GetProperty(property)!.GetValue(o, null)!.Equals(value)) : 
-            null;
+            null)!;
     }
 }

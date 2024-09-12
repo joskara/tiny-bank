@@ -6,9 +6,9 @@ public class TransactionDto
 {
     public Guid Id { get; set; }
     
-    public Guid OriginAccountId { get; set; }
+    public Guid? OriginAccountId { get; set; }
     
-    public Guid DestinationAccountId { get; set; }
+    public Guid? DestinationAccountId { get; set; }
     
     public decimal Amount { get; set; }
     
@@ -18,5 +18,5 @@ public class TransactionDto
     
     public DateTime DateCreated { get; set; }
     
-    public DateTime CreatedBy { get; set; }
+    public Guid CreatedBy { get; set; }
 }

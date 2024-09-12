@@ -2,5 +2,7 @@
 
 public enum TransactionStatus
 {
-    
+    Error,
+    InProgress,
+    Done,
 }

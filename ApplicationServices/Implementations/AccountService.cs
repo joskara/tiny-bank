@@ -13,7 +13,9 @@ public class AccountService(
 {
     public IEnumerable<Account> GetAccounts()
     {
-        throw new NotImplementedException();
+        var accountsPoco = accountRepository.Get();
+
+        return accountsPoco.ToDomain();
     }
 
     public Account GetAccount(Guid accountId)

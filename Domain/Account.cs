@@ -47,4 +47,16 @@ public class Account
         IsActive = isActive;
         ModifiedAt = DateTime.UtcNow;
     }
+
+    public void Deposit(decimal transactionAmount)
+    {
+        Balance += transactionAmount;
+        ModifiedAt = DateTime.UtcNow;
+    }
+    
+    public void Withdrawal(decimal transactionAmount)
+    {
+        Balance -= transactionAmount;
+        ModifiedAt = DateTime.UtcNow;
+    }
 }
